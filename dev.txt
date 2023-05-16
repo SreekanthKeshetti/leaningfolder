@@ -1,2 +1,7 @@
 i add a file named dev.txt putiing tht branch as dev lets see what happens.
+<<<<<<< HEAD
 sreekanth kehetti is from india
+=======
+currently this dev is merged to the master but i have a  doubt that if i change the file here will the same reflected in the dev dev.txt .
+
+>>>>>>> dev

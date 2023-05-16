@@ -1,0 +1,98 @@
+vuejs learning:
+..will look into code evolution youtube and offical website.
+concepts:
+what is vuejs?
+.a popular js frame work for building user interfaces.
+.it focused on doing one thing really well which is buildong user interfaces.
+.it does not focus on ther aspects where it ues plugins for those tasks for this vuejs has a 
+rich eco system that can be used like :
+vuex for the store management and vuetify for the ul elements  and vue router for routing
+ why vuejs?
+. vue is approachable.....
+. vue js component based
+. vuejs is declarative
+. vuejs is a framework build by taking some other frameworks and develop where necessary
+
+
+<10 features>
+Project structure :
+understand how the controlflows
+Package.json: dependcies and scripts.
+nodemodules: it is the folder where are dependencies are installed
+index.html: is the only html file present here , we are building a SPA
+we have a div with id ="app" it is responsible for the UI
+src: main.js here we specify the Root Component (i.e APP component) and 
+the dom element which will be controlled by the vue , here the DOM element is #app it is called 
+RootDomNode:every thing inside it is controlled by it.
+>.vue extension is a file where we specify html,csss and js corresponding to a portion  of the UI we see on the borwser.
+.Vue file: is a custom file format which uses the html like syntax to display the UI
+<template>html of the UI defines the structure
+<script>where the logic and fucntionality of your app can be maintained
+<style> css for the template
+instead of deviding them into three united for a single format in a file
+Components: in .vue file is called a sfc and folder is called Components.
+
+<<< Things to learn with one .vue file: >>>
+Tempalte Syntax-->
+ - responsible for the markup
+.Working with .vue file is wiring up the ligic to the markuo
+.that is connecting data present in the script block to the HTML present in the template block-- Declarative Approach.
+.let the vue know how you want to bind the data to the HTML and vue will take care of the rest.
+>>>Binding text from script to template: MusthachSyntax  {{ }} - this method of binding data is called TextInterPolation
+. the Directive used for binding text is v-text="name". the only drawback of it is it replace the entire conntent of the HTML element withe data property value.
+
+SUMMARY: in vue js we haev 2 ways to bind the txt  {{ }}[bind partial or full context ]and v-text [only full context but fast and rarely used ] but v-text has a drawback
+
+V-HTMl Directive: when we want to render sometext that is either with  <b> or<i> 
+ex: name: <b>sreekanth</b> when we use the above two {{}}, v-text is displayed as <b>sreekanth</b> but not shown on the screen in bold letters
+but here if u use v-html is render as SREEKANTH.
+
+Binding Attributes:
+v-bind: we can add data id and class using this
+rendering a list of elements and we want each to haev identical id we can use v-bind
+v-bind: binding to boolean data=> isDiasbled=true
+<button v-bind:disabled="isDisabeld">Bind</button>
+if disabled is true the disabled attributecan be seen in inspect if the disabled is false then we can see it in the inspect.
+binding the classes: use the underlinr ex -- this is can be done if the styling is static
+Binding classes pending for night(practice).
+
+Binding-styles:
+binding of sytles can be done in two ways array and object syntax.
+
+data==> hightlight:'orange',headerSize:50
+<h2 v-bind:style="{color:hightlight}">SreeKanth</h2>
+minor details is that the fontsize is a multi word so we have to keep it in qoutes as below
+and as it is a number we need to adad the px at the end
+<h2 v-bind:style="{
+color:hightlight,
+'font-size':headerSize + 'px' or fontSize:headerSize + 'px'
+}">SreeKanth</h2>
+
+
+id ,class etla sree and kanth vunnay anuko manam aa value ni data la declare cheysi and v-bind directive tho
+id and class attributes ki values esthey inspect cheysi nappudu manaki aa value osthadi
+data=>sree:'myId'
+<h2 v-bind:id='sree'>sreekanth_k</h2>
+not all values to be dynamic we can also give like this
+<h2 v-bind:style="{
+color:hightlight,
+'font-size':headerSize + 'px' or fontSize:headerSize + 'px',
+paddding:'20px'
+}">SreeKanth</h2>
+
+writing this way is good but for neat code we should use this way by declaring the object in the data
+data=> headerStyleObject:{
+color:'red',
+fontSize:'50px',
+padding:'20px'
+}
+<h2v-bind:style="headerStyleObject">StyleObject</h2>
+
+now lets look at the array syntax
+
+
+
+
+
+
+

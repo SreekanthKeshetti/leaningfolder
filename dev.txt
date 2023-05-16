@@ -1,0 +1,1 @@
+after merging the dev and master if we create a file in master it is also reflectinng inside the both.
